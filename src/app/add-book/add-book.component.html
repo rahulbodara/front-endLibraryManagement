@@ -1,0 +1,78 @@
+<div  class="book_list_main">
+    <div>
+        <app-sidebar></app-sidebar>
+    </div>    
+    <div class="main_addbook">
+    <form [formGroup]="form">
+        <div class="title">
+            <h3>Add Book</h3>
+        </div>
+        <div class="input-sec-row-1">
+            <div class="input-1 type">
+                <label for="book_type">Type *</label>
+                
+                <div class="toggle-btn">
+                    <label class="container" for="book">Book</label>
+                    <input type="radio" value="book" name="book_type" formControlName="book_type" (change)="changebook($event)">
+                        <span class="checkmark"></span>
+                    
+                        <label class="container" for="Magazine">Magazine </label>
+                        <input type="radio" value="magazine" name="book_type" formControlName="book_type" (change)="changebook($event)">
+                        <span class="checkmark"></span>
+                   
+                </div>
+            </div>
+            <div class="input-1 acc_no">
+                <label>Acc No *</label>
+                <input type="number" name="account" class="add-input" placeholder="" formControlName="account_number"> 
+            </div>
+            <div class="input-1 title">
+                <label>Title *</label>
+                <input type="text" name="account" class="add-input" placeholder="" formControlName="book_title">
+            </div>
+            <div class="input-1 author">
+                <label>Author *</label>
+                <input type="text" name="account" class="add-input" placeholder="" formControlName="book_author">
+            </div>
+        </div>
+        <div class="input-sec-row-2">
+            <div class="input-1 publisher">
+                <label>Publisher *</label>
+                <input type="text" name="account" class="add-input" placeholder="" formControlName="book_publisher">
+            </div>
+            <div class="input-1 bill">
+                <label>Bill Number *</label>
+                <input type="number" name="account" class="add-input" placeholder="" formControlName="bill_number">
+            </div>
+            <div class="input-1 price">
+                <label>Price *</label>
+                <input type="number" name="account" class="add-input" placeholder="" formControlName="book_price">
+            </div>
+            <div class="input-1 isbn">
+                <label>ISBN Number *</label>
+                <input type="number" name="account" class="add-input" placeholder="" formControlName="ISBN_number">
+            </div>
+        </div>
+        <div class="input-sec-row-3">
+            <div class="input-1 remarks">
+                <label>Remarks *</label>
+                <textarea name="remarks" id="" rows="10" formControlName="remarks"></textarea>
+            </div>
+            <div class="input-1 attach">
+                <label>Attach Softcopy *</label>
+                <div class="main">
+                    <div>
+                        <p>No file selected. Click here to add file</p>
+                        <h4>* Only pdf files allowed</h4>
+                    </div>
+                    <input type="file" formControlName="softcopy" (change)="onChange($event)">
+                </div>
+            </div>
+        </div>
+        <div class="btn-sec">
+            <button (click)="addbook()"><i class="fa-sharp fa-solid fa-floppy-disk" ></i>Save</button>
+            <button><i class="fa-sharp fa-solid fa-broom"></i>Clear</button>
+        </div>
+    </form>
+    </div>
+    </div>

@@ -1,0 +1,89 @@
+<div class="book_list_main">
+    <div>
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="book_list">
+        <div class="booklist_heading">
+            <h2>Book List</h2>
+        </div>
+        <div class="list_table">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="account_number">
+                    <th mat-header-cell *matHeaderCellDef> Acc No </th>
+                    <td mat-cell *matCellDef="let element"> {{element.account_number}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="book_title">
+                    <th mat-header-cell *matHeaderCellDef> Title </th>
+                    <td mat-cell *matCellDef="let element"> {{element.book_title}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="book_publisher">
+                    <th mat-header-cell *matHeaderCellDef> Publisher </th>
+                    <td mat-cell *matCellDef="let element"> {{element.book_publisher}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="book_author">
+                    <th mat-header-cell *matHeaderCellDef> Author </th>
+                    <td mat-cell *matCellDef="let element"> {{element.book_author}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="ISBN_number">
+                    <th mat-header-cell *matHeaderCellDef> ISBN Number</th>
+                    <td mat-cell *matCellDef="let element"> {{element.ISBN_number}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Action">
+                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button class="btn_theme" (click)=" openDialog(element)"><i class="fa-solid fa-eye eye"></i></button>
+                        <button class="btn_theme" (click)=" openDialog1(element)"><i class="fa-solid fa-pen pen"></i></button>
+                        <button class="btn_theme" (click)=" deletebok(element.id)"><i class="fa-solid fa-trash delete"></i></button>
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<!-- delete modal -->
+
+<div class="delete_modal" *ngIf="isshowthree">
+    <div class="que_mark">
+        <i class="fa-sharp fa-solid fa-circle-question question"></i>
+        <h3>Are you Sure?</h3>
+    </div>
+    <div class="delete_btn_group">
+        <button class="modal_btn_theme" (click)="openDialogfour()">Yes</button>
+        <button class="modal_btn_theme">No</button>
+    </div>
+</div>
+
+
+<!-- delete modal two -->
+
+<div *ngIf="isshowfour">
+    <div class="save-mdl">
+        <div class="bg-drop"></div>
+        <div class="start-mdl">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-check"></i>
+                </div>
+                <h4>Record Delete successfully</h4>
+            </div>
+        </div>
+    </div>
+</div>

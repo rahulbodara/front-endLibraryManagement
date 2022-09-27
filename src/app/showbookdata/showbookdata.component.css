@@ -1,0 +1,71 @@
+.details_modal {
+    position: fixed;
+    top: 16%;
+    left: 29%;
+    width: 45%;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(196, 194, 196, 1);
+    margin: 20px;
+    padding: 50px 40px;
+}
+
+.modal_heading h2 {
+    font-size: 18px;
+}
+
+.input_box label {
+    font-size: 14px;
+}
+
+.input_part {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.input_theme {
+    margin-top: 5px;
+    background-color: #c8c8c8;
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.input_box:nth-child(2) input {
+    width: 300px;
+}
+
+.input_box:nth-child(3) input {
+    width: 260px;
+}
+
+.input_box:nth-child(4) input {
+    width: 250px;
+}
+
+.input_box:nth-child(5) input {
+    width: 180px;
+}
+
+.input_box:nth-child(6) input {
+    width: 100px;
+}
+
+.input_box textarea {
+    width: 300px;
+}
+
+.close_theme {
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #555555;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+}
+
+.close {
+    padding-right: 10px;
+}

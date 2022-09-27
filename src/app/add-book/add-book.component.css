@@ -1,0 +1,224 @@
+.main_addbook {
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(196, 194, 196, 1);
+    margin: 20px;
+    padding: 50px 40px;
+    width: calc(100% - 350px);
+}
+.main_addbook .title {
+    font-size: 20px;
+    color: #252525;
+}
+.main_addbook .input-sec-row-1 {
+    margin-top: 50px;
+    display: flex;
+    gap:30px;   
+}
+.main_addbook .input-1 {
+    display: grid;
+}
+.main_addbook .input-sec-row-1 .input-1.type {
+    width: 15%;
+}
+.main_addbook .input-1 > label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn {
+    padding: 8px 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container:hover input~.checkmark {
+    background-color: #ccc;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container input:checked~.checkmark {
+    background-color: #d9d9d9;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container input:checked~.checkmark:after {
+    display: block;
+}
+.main_addbook .input-sec-row-1 .input-1 .toggle-btn .container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #008e06;
+}
+.main_addbook .input-sec-row-1 .input-1.acc_no{
+    width: 15%;
+}
+.main_addbook .input-1 .add-input{
+    border: 0;
+    outline: 0;
+    height: 37px;
+    border-radius:10px;
+    box-shadow: 7px 7px 5px -3px rgba(196,194,196,0.50);
+    font-size: 18px;
+    width: 100%;
+}
+.main_addbook .input-sec-row-1 .input-1.title{
+    width:32.5%;
+}
+.main_addbook .input-sec-row-1 .input-1.author{
+    width:32.5%;
+}
+.main_addbook .input-sec-row-2 {
+    margin-top: 30px;
+    display: flex;
+    gap:30px;   
+}
+.main_addbook .input-sec-row-2 .input-1.publisher{
+   width: 32%;
+}
+.main_addbook .input-sec-row-2 .input-1.bill{
+    width: 25%;
+}
+.main_addbook .input-sec-row-2 .input-1.price{
+    width: 15%;
+}
+.main_addbook .input-sec-row-2 .input-1.isbn{
+    width: 28%;
+}
+.main_addbook .input-sec-row-3{
+    margin-top: 50px;
+    display: flex;
+    gap:30px;
+}
+.main_addbook .input-sec-row-3 .input-1.remarks{
+    width: 35%;
+}
+.main_addbook .input-sec-row-3 .input-1.remarks textarea{
+    width: 100%;
+    height: 130px;
+    outline: 0;
+    border: 0;
+    border-radius: 12px;
+}
+.main_addbook .input-sec-row-3 .input-1.attach{
+    width: 35%;
+}
+.main_addbook .input-sec-row-3 .input-1.attach .main{
+    height: 130px;
+    border: 1px dashed grey;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_addbook .input-sec-row-3 .input-1.attach .main div p{
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+.main_addbook .input-sec-row-3 .input-1.attach .main div h4{
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 3px 0;
+    text-align: center;
+}
+.main_addbook .btn-sec{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.main_addbook .btn-sec button:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 7px;
+    width: 170px;
+    background-color: #003940;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    gap:10px;
+    cursor: pointer;
+    border: 0;
+}
+.main_addbook .btn-sec button:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 7px;
+    width: 170px;
+    background-color: #555555;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    gap:10px;
+    cursor: pointer;
+    border: 0;
+}
+@media (max-width:1536px){
+    .main_addbook .input-sec-row-1 {
+        flex-wrap: wrap;
+    }
+    .main_addbook .input-sec-row-1 .input-1.type {
+        width: 50%;
+    }
+    .main_addbook .input-sec-row-1 .input-1.acc_no{
+        width: 50%;
+    }
+    .main_addbook .input-sec-row-1 .input-1.title{
+        width:50%;
+    }
+    .main_addbook .input-sec-row-1 .input-1.author{
+        width:50%;
+    }
+    .main_addbook .input-sec-row-2 {
+        flex-wrap: wrap;
+    }
+    .main_addbook .input-sec-row-2 .input-1.publisher{
+        width: 50%;
+    }
+    .main_addbook .input-sec-row-2 .input-1.bill{
+        width: 50%;
+    }
+    .main_addbook .input-sec-row-2 .input-1.price{
+        width: 50%;
+    }
+    .main_addbook .input-sec-row-2 .input-1.isbn{
+        width: 50%;
+    }
+}
+
+.book_list_main{
+    display: flex;
+}

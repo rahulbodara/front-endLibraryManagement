@@ -1,0 +1,79 @@
+<div class="Edit_modal" >
+    <div class="modal_heading">
+        <h2>Edit</h2>
+    </div>
+    <div class="input_part">
+        <div class="input_box">
+            <div>
+                <label for="">Bllok Stock No.</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="this.data.account_number">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Title</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.book_title">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Author</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.book_author">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Publisher</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.book_publisher">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Bill Number</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.bill_number">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Price</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.book_price">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">ISBN number</label>
+            </div>
+            <input class="edit_input_theme" type="text" [(ngModel)]="data.ISBN_number">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Remarks</label>
+            </div>
+            <textarea class="edit_input_theme" name="" id="" cols="30" rows="10" [(ngModel)]="data.remarks"></textarea>
+        </div>
+    </div>
+    <div class="btn_group">
+        <div class="close_btn">
+            <button class="check_theme" (click)="updatedetials()"><i class="fa-solid fa-circle-check check" ></i>Update</button>
+        </div>
+        <div class="close_btn">
+            <button class="close_theme"><i class="fa-solid fa-circle-xmark close"></i>Close</button>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="isshowfour">
+    <div class="save-mdl">
+        <div class="bg-drop"></div>
+        <div class="start-mdl">
+            <div class="content">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-check"></i>
+                </div>
+                <h4>Record Delete successfully</h4>
+            </div>
+        </div>
+    </div>
+</div>
+

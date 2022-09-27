@@ -1,0 +1,158 @@
+.Edit_modal {
+    position: fixed;
+    top: 16%;
+    left: 29%;
+    width: 45%;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(196, 194, 196, 1);
+    margin: 20px;
+    padding: 50px 40px;
+}
+
+.modal_heading h2 {
+    font-size: 18px;
+}
+
+.input_box label {
+    font-size: 14px;
+}
+
+.input_part {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.edit_input_theme {
+    margin-top: 5px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.input_box:nth-child(2) input {
+    width: 300px;
+}
+
+.input_box:nth-child(3) input {
+    width: 260px;
+}
+
+.input_box:nth-child(4) input {
+    width: 250px;
+}
+
+.input_box:nth-child(5) input {
+    width: 180px;
+}
+
+.input_box:nth-child(6) input {
+    width: 100px;
+}
+
+.input_box textarea {
+    width: 300px;
+}
+
+.check_theme {
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #003940;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #79ced8;
+}
+
+.close {
+    padding-right: 10px;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.check {
+    padding-right: 10px;
+}
+
+
+/* model */
+
+.save-mdl{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.bg-drop{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    pointer-events: auto;
+    transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+    opacity: 1;
+    background: rgba(0,0,0,.32);
+}
+.save-mdl .start-mdl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    top: 48%;
+    left: 56.1%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 51px 70px;
+    z-index: 1000;
+    border-radius: 20px;
+    box-shadow: 0 11px 15px -7px #0003, 0 24px 38px 3px #00000024, 0 9px 46px 8px #0000001f;
+}
+.save-mdl .start-mdl .content .icon{
+    background: #008E06;
+    color: white;
+    border-radius: 50%;
+    font-size: 26px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.save-mdl .start-mdl .content h4{
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (min-width:991px){
+    .book_list{
+        margin-inline-start: auto;
+    }
+}
+@media(max-width:1399px){
+    .mat-header-cell{
+        padding: 0px 10px;
+    }
+    .mat-cell{
+        padding: 0px 10px;
+    }
+}
+@media (max-width:991px){
+    .book_list{
+        width: 100%;
+    }
+}
+

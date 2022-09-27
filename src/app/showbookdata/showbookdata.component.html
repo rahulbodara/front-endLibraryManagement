@@ -1,0 +1,58 @@
+<div class="details_modal" >
+    <div class="modal_heading">
+        <h2>Details</h2>
+    </div>
+    <div class="input_part">
+        <div class="input_box">
+            <div>
+                <label for="">Bllok Stock No.</label>
+            </div>
+            <input class="input_theme" type="text">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Title</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.book_title">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Author</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.book_author">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Publisher</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.book_publisher">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Bill Number</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.bill_number">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Price</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.book_price">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">ISBN number</label>
+            </div>
+            <input class="input_theme" type="text" [(ngModel)]="data.ISBN_number">
+        </div>
+        <div class="input_box">
+            <div>
+                <label for="">Remarks</label>
+            </div>
+            <textarea class="input_theme" name="" id="" cols="30" rows="10" [(ngModel)]="data.remarks"></textarea>
+        </div>
+    </div>
+    <div class="close_btn">
+        <button class="close_theme"><i class="fa-solid fa-circle-xmark close"></i>Close</button>
+    </div>
+</div>
